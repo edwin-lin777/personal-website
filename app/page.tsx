@@ -1,8 +1,15 @@
+import { ModeToggle } from "@/components/ModeToggle";
+import { ThemeProvider } from "@/components/ThemeProvider";
+
+import React from "react";
+
 const page = () => {
   return (
-    <div className="flex items-center  justify-center mt-8 text-4xl">
-      <b> Welcome to my personal profile</b>
-    </div>
+    <ThemeProvider defaultTheme="light">
+      <div>
+        hello <ModeToggle />
+      </div>
+    </ThemeProvider>
   );
 };
 
