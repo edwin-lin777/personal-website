@@ -135,14 +135,19 @@
 }
 
 .box {
-  border: 2px, solid, var(--border);
+  border: 2px solid var(--border);
   border-radius: 5px;
+  justify-content: center;
   display: flex;
   margin: 0 auto;
   gap: 35px;
   height: 400px;
   align-items: center;
-  background-color: rgba(235, 235, 235, 0.236);
+  background-color: rgba(211, 211, 211, 0.288);
+  padding-bottom: 35px;
+  padding-inline: 25px;
+  max-width: 90%;
+  margin-top: 15px;
 }
 
 .portfolio-section {
@@ -150,7 +155,7 @@
 }
 
 .description {
-  width: 75%;
+  width: 55%;
   border: 2px, solid, rgba(0, 0, 0, 0);
   font-size: 25px;
   font-family: Calibri;
@@ -165,9 +170,6 @@
   justify-content: center;
   border: 2px, solid, rgba(0, 0, 0, 0);
   margin-left: 0px;
-
-  padding-left: 35px;
-  padding-right: 35px;
 }
 .hs {
 }
