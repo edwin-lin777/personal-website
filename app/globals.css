@@ -140,14 +140,15 @@
   justify-content: center;
   display: flex;
   margin: 0 auto;
-  gap: 35px;
+  gap: 150px;
   height: 400px;
   align-items: center;
-  background-color: rgba(211, 211, 211, 0.288);
+  background-color: rgba(252, 252, 252, 0.692);
   padding-bottom: 35px;
   padding-inline: 25px;
   max-width: 90%;
   margin-top: 15px;
+  box-shadow: 2px 2px 5px rgba(151, 151, 151, 0.4);
 }
 
 .portfolio-section {
