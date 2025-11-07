@@ -7,9 +7,11 @@ import { Roboto } from "next/font/google";
 import StuffButton from "@/components/stuffButton";
 import Text from "@/components/myText";
 import MyImages from "@/components/MyImages";
+
 const roboto = Roboto({
   weight: ["400", "700"],
   subsets: ["latin"],
+  display: "swap"
 });
 
 const page = () => {
@@ -22,13 +24,14 @@ const page = () => {
       <div className="portfolio-section">
         <div className="box">
           <div className="description">
-            <div className={`${roboto.className} text-center  text-4xl mb-5`}>
-              My Personal Profile
+            <div className={`text-center  text-4xl mb-5`}>
+              Edwin Lin
             </div>
             <Text />
           </div>
 
           <MyImages />
+        
         </div>
         <div className="line">Stuff I've done</div>
         <StuffButton text="tesrre" />{" "}

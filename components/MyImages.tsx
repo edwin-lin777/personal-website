@@ -13,14 +13,15 @@ export const MyImages = () => {
           height={200}
           className="rounded-2xl"
         />
+        
       </div>
-      <div className="links flex gap-10">
+      <div className="links flex  mt-3 gap-5">
         <a
           href="https://github.com/edwin-lin777"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image src="/images/github.png" alt="GitHub" width={40} height={40} />
+          <Image src="/images/github.png" alt="GitHub" width={25} height={25} />
         </a>
         <a
           href="https://www.linkedin.com/in/edwin-lin-81552a312/"
@@ -30,10 +31,27 @@ export const MyImages = () => {
           <Image
             src="/images/linkedin.png"
             alt="LinkedIn"
-            width={40}
-            height={40}
+            width={25}
+            height={25}
           />
+          
+          
         </a>
+        <a
+          href="https://www.linkedin.com/in/edwin-lin-81552a312/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/images/linkedin.png"
+            alt="LinkedIn"
+            width={25}
+            height={25}
+          />
+          
+          
+        </a>
+        
       </div>
     </div>
   );
