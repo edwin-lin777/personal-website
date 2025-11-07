@@ -1,27 +1,28 @@
-'use client'
-import React, { useState } from 'react'
+"use client";
+import React, { useState } from "react";
 
+const MyButton = ({ title, description, images }) => {
+  const [open, setOpen] = useState(false);
+  const [hovered, setHovered] = useState(false);
 
+  const setOpened = () => {
+    setOpen(!open);
+  };
 
-
-const MyButton = ({title, description, images}) => {
-  const [open,setOpen] = useState(false)
-  const [hovered,setHovered] = useState(false)
-
-  const setOpened = () =>  {
-    setOpen(!open)
-  }
-
-  
   return (
+    <div>
+      <button
+        onClick={setOpened}
+        onMouseEnter={setHovered(true)}
+        onMouseLeave={setHovered(false)}
+        className={open || hovered ? "bg-amber-100" : "bg-blue-50"}
+      >
+        {title}
+      </button>
 
-    <div> 
-      <button onClick={setOpened}>Click Me</button>
+      {open && <div>{description}</div>}
     </div>
+  );
+};
 
-
-    
-  )
-}
-
-export default MyButton
+export default MyButton;
