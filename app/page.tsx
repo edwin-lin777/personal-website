@@ -1,12 +1,14 @@
+'use cleint'
 import { Button } from "@/components";
 import { ModeToggle } from "@/components/ModeToggle";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Image from "next/image";
 import React from "react";
 import { Roboto } from "next/font/google";
-import StuffButton from "@/components/stuffButton";
+
 import Text from "@/components/myText";
 import MyImages from "@/components/MyImages";
+import MyButton from "@/components/MyButton";
 
 const roboto = Roboto({
   weight: ["400", "700"],
@@ -33,8 +35,8 @@ const page = () => {
           <MyImages />
         
         </div>
-        <div className="line">Stuff I've done</div>
-        <StuffButton text="tesrre" />{" "}
+        <div className="line w-[95%] mx-auto text-3xl" >My Projects</div>
+        <MyButton title={"tesrre "} description={"hello"} images={"hello"}/>
       </div>
     </ThemeProvider>
   );

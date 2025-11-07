@@ -1,8 +1,26 @@
-import React from 'react'
 'use client'
-const MyButton = () => {
+import React, { useState } from 'react'
+
+
+
+
+const MyButton = ({title, description, images}) => {
+  const [open,setOpen] = useState(false)
+  const [hovered,setHovered] = useState(false)
+
+  const setOpened = () =>  {
+    setOpen(!open)
+  }
+
+  
   return (
-    <button>Click Me</button>
+
+    <div> 
+      <button onClick={setOpened}>Click Me</button>
+    </div>
+
+
+    
   )
 }
 

@@ -145,6 +145,7 @@
   width: 70%;
   margin: 2% auto;
   background-color: rgba(199, 199, 199, 0.103);
+    box-shadow: 0 0 15px 5px rgba(182, 182, 189, 0.7);
 }
 
 .description {
