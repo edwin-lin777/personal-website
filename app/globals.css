@@ -71,11 +71,13 @@
   --sidebar: oklch(0.984 0.003 247.858);
   --sidebar-foreground: oklch(0.129 0.042 264.695);
   --sidebar-primary: oklch(0.208 0.042 265.755);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-primary-foreground: oklch(47.12% 0.00005 271.152);
   --sidebar-accent: oklch(0.968 0.007 247.896);
   --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
   --sidebar-border: oklch(0.929 0.013 255.508);
-  --sidebar-ring: oklch(0.704 0.04 256.788);
+  --sidebar-ring: oklch(69.603% 0.05085 256.245);
+  --button-color: oklch(100% 0.00011 271.152);
+  --clicked-color: oklch(53.128% 0.00006 271.152 / 0.346);
 }
 
 .dark {
@@ -110,6 +112,8 @@
   --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
+  --button-color: oklch(100% 0.00011 271.152);
+  --clicked-color: oklch(45.678% 0.00005 271.152 / 0.466);
 }
 
 @layer base {
@@ -148,7 +152,6 @@
   box-shadow: 0 0 15px 5px rgba(182, 182, 189, 0.7);
   flex-wrap: nowrap;
   overflow-x: auto;
-  
 }
 
 .description {
@@ -156,24 +159,10 @@
   text-align: center;
   margin-top: -15px;
   font-size: large;
-  
-  
-}
-
-.images {
-  
-}
-.hs {
-}
-
-.links {
 }
 
 .images img {
   width: 100%;
   height: auto;
   object-fit: auto;
-}
-
-.portfolio-section {
 }

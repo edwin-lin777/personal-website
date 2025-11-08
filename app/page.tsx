@@ -40,7 +40,8 @@ const page = () => {
 
         <div className="projects-section w-[95%] mx-auto">
           <div className=" text-3xl"> My Projects</div>
-          <hr className="border-1 rounded-full"></hr>
+          <hr className="border rounded-full"></hr>
+
           <LoadProjects/>
         </div>
       </div>

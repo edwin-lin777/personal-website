@@ -4,7 +4,7 @@ import Image from "next/image";
 export const MyImages = () => {
   return (
     <div className="scale-175">
-      <div className="relative w-[100%] aspect-square max-w-[300px] min-w-[120px]">
+      <div className="relative w-full aspect-square max-w-[300px] min-w-[120px]">
         <Image
           src="/images/hs.png"
           alt="My Photo"
