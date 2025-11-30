@@ -10,7 +10,7 @@ export function TimelineDemo() {
       subtitle: "FTMO Funded",
       content: (
         <div key="1232">
-          <p className="text-neutral-800 dark:text-neutral-200 text-md font-sans md:text-m font-normal mb-8">
+          <p className="text-neutral-800 dark:text-neutral-200 text-lg font-sans font-normal mb-8">
             FTMO is a proprietary trading firm that funds traders who prove
             their skill through a two-stage evaluation. The first stage, the
             Challenge, requires a 10% profit target while avoiding a 10% overall

@@ -3,46 +3,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-
-@import "tailwindcss";
-
-/* Professional Background Animations - Faster Speed */
-@keyframes moveFast {
-  0%, 100% {
-    transform: translateX(0%) translateY(0%) scale(1);
-  }
-  25% {
-    transform: translateX(-2%) translateY(-1%) scale(1.02);
-  }
-  50% {
-    transform: translateX(-4%) translateY(-2%) scale(1.01);
-  }
-  75% {
-    transform: translateX(-2%) translateY(-3%) scale(1.03);
-  }
-}
-
-@keyframes moveMedium {
-  0%, 100% {
-    transform: translateX(0%) translateY(0%) scale(1);
-  }
-  33% {
-    transform: translateX(3%) translateY(-1%) scale(1.01);
-  }
-  66% {
-    transform: translateX(1%) translateY(2%) scale(1.02);
-  }
-}
-
-@keyframes moveSlow {
-  0%, 100% {
-    transform: translateX(0%) translateY(0%) scale(1);
-  }
-  50% {
-    transform: translateX(-1%) translateY(1%) scale(1.01);
-  }
-}
-
 .animate-move-fast {
   animation: moveFast 8s ease-in-out infinite;
 }
@@ -74,7 +34,6 @@
     );
   }
 }
-
 
 .mask-radial {
   mask-image: radial-gradient(ellipse at 50% 50%, black 40%, transparent 70%);
