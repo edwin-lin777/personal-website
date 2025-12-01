@@ -108,8 +108,11 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         </div>
       </div>
 
-      <hr className="rounded-full bg-gray-950" />
-      <div ref={timelineRef} className="relative max-w-7xl mx-auto pb-20">
+      <hr className="rounded-full bg-gray-950 -mt-20" />
+      <div
+        ref={timelineRef}
+        className="relative max-w-7xl -mt-15 mx-auto pb-20"
+      >
         {data.map((item, index) => (
           <div
             key={index}
@@ -152,6 +155,82 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-black via-blue-500 to-transparent from-[0%] via-[10%] rounded-full"
           />
         </div>
+      </div>
+      <div
+        style={{ fontFamily: "Times New Roman, Times, serif" }}
+        className="mt-15 flex justify-center items-center text-center"
+      >
+        <p>
+          "Hello Friends & Neighbors, it is a Good Morning... It is Saturday once
+          more. The day that so few can look back from and find satisfaction in
+          the previous week's choices, actions or lack of engagement. For the
+          majority, this day is a day of regret. One that reminds them that they
+          don't yet have it together. Be it patience, skill or mindset to
+          consistently trade... and trade profitably. These things take time to
+          forge and develop. It cannot be rushed, and it cannot be faked. In the
+          real world, the market will be a mirror. This means it will show you a
+          reflection of yourself. It will show you how the world would see you,
+          but not how you see yourself. An interesting experiment you might try
+          for yourself... Hold two hand mirrors in front of you with their edges
+          touching and a right angle between them like the two covers of a book
+          when you're reading. With some adjustment you can get a complete
+          reflection of your face as others see it. Be prepared to see a
+          "stranger"... or someone who looks a lot like you, but strangely seems
+          like an imposter. However, from one perspective, the real "You", that
+          gazes into the mirror on the daily; you see yourself opposite to how
+          the world sees you. As you might imagine, the world sees "You",
+          completely opposite, though the similarities are remarkable on the
+          surface! The world might see the present you and not be terribly
+          impressed. Or perhaps, the world sees an incredibly talented person in
+          you. Either case, the chances of both perspectives coming to a
+          collective agreement about “You”, is unlikely. So, it is important to
+          love your perspective of "You", and allow the perspectives others may
+          have about you. Even if they stand in opposition to the one you have.
+          <br></br><br></br>
+          This is a gentle reminder that others do not see the time and effort
+          you put into building "You". They only see what you are at the present
+          and what you allow them to know and see. However, you see everything.
+          You see all the nights studying or seeking encouragement just to
+          continue. You know, all too well, the periods of despair and doubt you
+          wrestle with. For some, that is all you can see in "You", at this
+          present time. For those of you that managed to wrestle yourself into
+          submission and trust in the process... your perspective has radically
+          transformed. You have a fresh perspective of "You", like a Springtime
+          sunrise with the dewy grass glistening in the morning rays of light.
+          You can remember the night, but it no longer holds its darkness over
+          you. You see new opportunities, new goals and milestones to reach
+          for... fearlessly. For those of you that can't see the light of the
+          morning of opportunities; and you sit in the darkness of the present
+          night... be encouraged. Dawn is coming for "You" too. Don't lose hope
+          or become discouraged in "You". When you feel like quitting, remind
+          yourself what kept you holding on this long... renew your commitment
+          to "You". If you aren't the one doing that, then who is? Who will
+          later on? Every success had their time in the "night". They had to
+          press on when it felt like they would never get there. Like them, you
+          need to press on and stay on task, never veering off course. Daily
+          calibration of your bearings and trajectory towards your well
+          determined target of "Excellence". However, excellence is not a
+          destination... it is a continual act. Some view tasting success as a
+          measure of arrival. It is not. It is much like a smile from a handsome
+          stranger or the brush of the hand against yours from a beautiful
+          woman, you never knew before. It is just a moment or experience of the
+          rest of your life. <br></br>
+          This journey is a lifestyle... not a fad or impulsive choice to make
+          and act on for a season only. Are you satisfied with the effort you
+          have put in thus far? If you were honest with "You", have you put the
+          time and effort into your craft? If you were someone else, but your
+          personal coach and could see everything you did 24 hours a day, what
+          you did with your time, attention, money, and thoughts... would you be
+          pleased at the effort "You" are putting into this? Or would you be
+          redirecting "You" in a more productive direction and recalibrating
+          your intentions? Today is just one more Saturday of the short list of
+          Saturdays you have left to live.
+          <br></br><br></br>
+          How many more will you deny as moments where you can honestly reflect
+          on and feel confident that "You" are performing optimally and staying
+          busy and remaining optimistic? Elevate the positive, eliminate the
+          negative... and get busy!"" <br></br><br></br>-Be safe, M.
+        </p>
       </div>
     </div>
   );
