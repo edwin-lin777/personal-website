@@ -127,7 +127,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                   {item.title}
                   <br></br>
                 </h3>
-                <h2 className="hidden md:block text-sm md:pl-20 md:text-2xl font-bold text-neutral-500 dark:text-neutral-500">
+                <h2 className=" whitespace-pre-line hidden md:block text-sm md:pl-20 md:text-2xl font-bold text-neutral-500 dark:text-neutral-500">
                   {item.subtitle}
                 </h2>
               </div>
