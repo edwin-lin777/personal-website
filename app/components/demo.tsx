@@ -1,9 +1,12 @@
+"use client";
 import Image from "next/image";
 
 import { Timeline } from "@/components/ui/timeline";
 import Link from "next/link";
 import Video from "./Video";
+import { useState } from "react";
 export function TimelineDemo() {
+  const [open, setOpen] = useState(false);
   const data = [
     {
       key: "2024",
@@ -43,15 +46,45 @@ export function TimelineDemo() {
               alt="startup template"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-75 w-20 md:w-44 lg:w-75 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpen(true)}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-75 w-20 md:w-44 lg:w-75 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
+            {open && (
+              <div
+                className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+                onClick={() => setOpen(false)}
+              >
+                <Image
+                  src="/passed-ftmo-challenge.jpeg"
+                  alt="example enlarged"
+                  width={600}
+                  height={450}
+                  className="rounded-lg"
+                />
+              </div>
+            )}
             <Image
               src="/passed-verification.jpeg"
               alt="startup template"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-75 w-20 md:w-44 lg:w-75  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpen(true)}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-75 w-20 md:w-44 lg:w-75  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
+            {open && (
+              <div
+                className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+                onClick={() => setOpen(false)}
+              >
+                <Image
+                  src="/passed-verification.jpeg"
+                  alt="example enlarged"
+                  width={600}
+                  height={450}
+                  className="rounded-lg"
+                />
+              </div>
+            )}
           </div>
         </div>
       ),
@@ -400,7 +433,7 @@ export function TimelineDemo() {
           </p>
 
           <div className="flex gap-4">
-            <Video/>
+            <Video />
           </div>
         </div>
       ),
