@@ -158,35 +158,43 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       </div>
       <div
         style={{ fontFamily: "Times New Roman, Times, serif" }}
-        className="mt-15 flex justify-center items-center text-center"
+        className="mt-35 flex sm:text-sm md:text-md flex-col lg:text-lg justify-center  pb-50"
       >
+        <div>
+          <p className="text-left font-sans sm:text-md md:text-lg lg:text-3xl mb-5">
+            My Favourite Trading Quote
+          </p>
+        </div>
+
         <p>
-          "Hello Friends & Neighbors, it is a Good Morning... It is Saturday once
-          more. The day that so few can look back from and find satisfaction in
-          the previous week's choices, actions or lack of engagement. For the
-          majority, this day is a day of regret. One that reminds them that they
-          don't yet have it together. Be it patience, skill or mindset to
-          consistently trade... and trade profitably. These things take time to
-          forge and develop. It cannot be rushed, and it cannot be faked. In the
-          real world, the market will be a mirror. This means it will show you a
-          reflection of yourself. It will show you how the world would see you,
-          but not how you see yourself. An interesting experiment you might try
-          for yourself... Hold two hand mirrors in front of you with their edges
-          touching and a right angle between them like the two covers of a book
-          when you're reading. With some adjustment you can get a complete
-          reflection of your face as others see it. Be prepared to see a
-          "stranger"... or someone who looks a lot like you, but strangely seems
-          like an imposter. However, from one perspective, the real "You", that
-          gazes into the mirror on the daily; you see yourself opposite to how
-          the world sees you. As you might imagine, the world sees "You",
-          completely opposite, though the similarities are remarkable on the
-          surface! The world might see the present you and not be terribly
-          impressed. Or perhaps, the world sees an incredibly talented person in
-          you. Either case, the chances of both perspectives coming to a
-          collective agreement about “You”, is unlikely. So, it is important to
-          love your perspective of "You", and allow the perspectives others may
-          have about you. Even if they stand in opposition to the one you have.
-          <br></br><br></br>
+          "Hello Friends & Neighbors, it is a Good Morning... It is Saturday
+          once more. The day that so few can look back from and find
+          satisfaction in the previous week's choices, actions or lack of
+          engagement. For the majority, this day is a day of regret. One that
+          reminds them that they don't yet have it together. Be it patience,
+          skill or mindset to consistently trade... and trade profitably. These
+          things take time to forge and develop. It cannot be rushed, and it
+          cannot be faked. In the real world, the market will be a mirror. This
+          means it will show you a reflection of yourself. It will show you how
+          the world would see you, but not how you see yourself. An interesting
+          experiment you might try for yourself... Hold two hand mirrors in
+          front of you with their edges touching and a right angle between them
+          like the two covers of a book when you're reading. With some
+          adjustment you can get a complete reflection of your face as others
+          see it. Be prepared to see a "stranger"... or someone who looks a lot
+          like you, but strangely seems like an imposter. However, from one
+          perspective, the real "You", that gazes into the mirror on the daily;
+          you see yourself opposite to how the world sees you. As you might
+          imagine, the world sees "You", completely opposite, though the
+          similarities are remarkable on the surface! The world might see the
+          present you and not be terribly impressed. Or perhaps, the world sees
+          an incredibly talented person in you. Either case, the chances of both
+          perspectives coming to a collective agreement about “You”, is
+          unlikely. So, it is important to love your perspective of "You", and
+          allow the perspectives others may have about you. Even if they stand
+          in opposition to the one you have.
+          <br></br>
+          <br></br>
           This is a gentle reminder that others do not see the time and effort
           you put into building "You". They only see what you are at the present
           and what you allow them to know and see. However, you see everything.
@@ -225,11 +233,13 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           redirecting "You" in a more productive direction and recalibrating
           your intentions? Today is just one more Saturday of the short list of
           Saturdays you have left to live.
-          <br></br><br></br>
+          <br></br>
+          <br></br>
           How many more will you deny as moments where you can honestly reflect
           on and feel confident that "You" are performing optimally and staying
           busy and remaining optimistic? Elevate the positive, eliminate the
-          negative... and get busy!"" <br></br><br></br>-Be safe, M.
+          negative... and get busy!" <br></br>
+          <br></br>-Be safe, M.
         </p>
       </div>
     </div>

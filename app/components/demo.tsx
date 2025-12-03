@@ -6,7 +6,8 @@ import Link from "next/link";
 import Video from "./Video";
 import { useState } from "react";
 export function TimelineDemo() {
-  const [open, setOpen] = useState(false);
+  const [openImage, setOpenImage] = useState(null);
+
   const data = [
     {
       key: "2024",
@@ -46,13 +47,13 @@ export function TimelineDemo() {
               alt="startup template"
               width={500}
               height={500}
-              onClick={() => setOpen(true)}
-              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-75 w-20 md:w-44 lg:w-75 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/passed-ftmo-challenge.jpeg")}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-75 w-20 md:w-44 lg:w-75 "
             />
-            {open && (
+            {openImage && (
               <div
                 className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
-                onClick={() => setOpen(false)}
+                onClick={() => setOpenImage(null)}
               >
                 <Image
                   src="/passed-ftmo-challenge.jpeg"
@@ -68,16 +69,16 @@ export function TimelineDemo() {
               alt="startup template"
               width={500}
               height={500}
-              onClick={() => setOpen(true)}
-              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-75 w-20 md:w-44 lg:w-75  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/passed-verification.jpeg")}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-75 w-20 md:w-44 lg:w-75  "
             />
-            {open && (
+            {openImage && (
               <div
                 className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
-                onClick={() => setOpen(false)}
+                onClick={() => setOpenImage(null)}
               >
                 <Image
-                  src="/passed-verification.jpeg"
+                  src={openImage}
                   alt="example enlarged"
                   width={600}
                   height={450}
@@ -121,28 +122,61 @@ export function TimelineDemo() {
               alt="hero template"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/mit.jpg")}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full"
             />
+            {openImage && (
+              <div
+                className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+                onClick={() => setOpenImage(null)}
+              >
+                <Image
+                  src={openImage}
+                  alt="example enlarged"
+                  width={600}
+                  height={450}
+                  className="rounded-lg"
+                />
+              </div>
+            )}
             <Image
               src="/app3.jpg"
               alt="feature template"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/app3.jpg")}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full "
             />
+            {openImage && (
+              <div
+                className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+                onClick={() => setOpenImage(null)}
+              >
+                <Image
+                  src={openImage}
+                  alt="example enlarged"
+                  width={600}
+                  height={450}
+                  className="rounded-lg"
+                />
+              </div>
+            )}
             <Image
-              src="/SemiFinal.jpg"
-              alt="bento template"
+              src="/Screenshot 2025-12-02 225716.png"
+              alt="semifinal picture"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/Screenshot 2025-12-02 225716.png")}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full "
             />
+
             <Image
               src="/photoofus.jpg"
               alt="cards template"
               width={500}
+              onClick={() => setOpenImage("/photoofus.jpg")}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full "
             />
           </div>
         </div>
@@ -181,7 +215,8 @@ export function TimelineDemo() {
               alt="hero template"
               width={750}
               height={750}
-              className="rounded-lg object-cover h-20 w-88 md:h-44 md:w-195 lg:h-90 lg:w-400  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/Screenshot 2025-11-30 204402.png")}
+              className="cursor-pointer rounded-lg object-cover h-20 w-88 md:h-44 md:w-195 lg:h-90 lg:w-400  "
             />
           </div>
         </div>
@@ -212,7 +247,8 @@ export function TimelineDemo() {
               alt="Picture of emu"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/emu.jpg")}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full "
             />
             <Image
               key="https://assets.aceternity.com/pro/hero-fdeafe"
@@ -220,7 +256,8 @@ export function TimelineDemo() {
               alt="duck"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/duck.jpg")}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full "
             />
             <Image
               key="https://assets.aceternity.com/pro/hero-faef23432"
@@ -228,7 +265,8 @@ export function TimelineDemo() {
               alt="goat"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/megoat1.jpg")}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full "
             />
             <Image
               key="https://assets.4234324234.com/pro/234324-faef23432"
@@ -236,7 +274,8 @@ export function TimelineDemo() {
               alt="cards template"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/fueld.jpg")}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full "
             />
           </div>
         </div>
@@ -270,7 +309,8 @@ export function TimelineDemo() {
               alt="forklift"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/forklift.jpg")}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full "
             />
             <Image
               key="https://assets.aceternity.com/pro/hero-fdeafe"
@@ -278,7 +318,8 @@ export function TimelineDemo() {
               alt="concrete"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/concerte.jpg")}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full "
             />
             <Image
               key="https://assets.aceternity.com/pro/hero-faef23432"
@@ -286,7 +327,8 @@ export function TimelineDemo() {
               alt="raining"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/raining.jpg")}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full "
             />
             <Image
               key="https://assets.4234324234.com/pro/234324-faef23432"
@@ -294,7 +336,8 @@ export function TimelineDemo() {
               alt="glass"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/glass.jpg")}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full "
             />
           </div>
         </div>
@@ -324,7 +367,8 @@ export function TimelineDemo() {
               alt="hero template"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/IMG_1215.jpg")}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full "
             />
             <Image
               key="https://assets.aceternity.com/pro/hero-fdeafe"
@@ -332,7 +376,8 @@ export function TimelineDemo() {
               alt="traction"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/IMG_1953.jpg")}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full "
             />
             <Image
               key="https://assets.aceternity.com/pro/hero-faef23432"
@@ -340,7 +385,8 @@ export function TimelineDemo() {
               alt="traction"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/IMG_3770.jpg")}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full "
             />
             <Image
               key="https://assets.4234324234.com/pro/234324-faef23432"
@@ -348,7 +394,8 @@ export function TimelineDemo() {
               alt="more traction"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/IMG_1786.jpg")}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full "
             />
           </div>
         </div>
@@ -382,7 +429,8 @@ export function TimelineDemo() {
               alt="trading"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/IMG_20230115_152405.jpg")}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full "
             />
             <Image
               key="https://assets.aceternity.com/pro/hero-fdeafe"
@@ -390,7 +438,8 @@ export function TimelineDemo() {
               alt="trading"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/IMG_20230228_060037.jpg")}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full "
             />
             <Image
               key="https://assets.aceternity.com/pro/hero-faef23432"
@@ -398,7 +447,8 @@ export function TimelineDemo() {
               alt="trading"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/IMG_20230918_061107.jpg")}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full "
             />
             <Image
               key="https://assets.4234324234.com/pro/234324-faef23432"
@@ -406,7 +456,8 @@ export function TimelineDemo() {
               alt="trading"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              onClick={() => setOpenImage("/IMG_20231128_065811.jpg")}
+              className="cursor-pointer rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full "
             />
           </div>
         </div>
