@@ -31,14 +31,15 @@ export function TimelineDemo() {
             consistency, and ability to manage risk.
             <br></br>
             <br></br>
-            <div className="sm:block hidden">
+            </p>
+            <p className="text-neutral-800 hidden sm:block dark:text-neutral-200 text-sm lg:text-lg font-sans font-normal mb-8">
             Even though passing the challenge only took 1 month, it took me
             almost 3 years (from Feburary of 2023) to learn the skills and
             techniques to be able to pass. I've dedicated years of my life to
             case studying, tape reading, backtesting, and failing over and over
             again to get to where I am. I am so proud of myself that I stayed
             disciplined, dedicated, and ignored what others were telling me.{" "}
-            </div>
+           
             <br></br>
             All of those 6 AM trading days, since I lived on the west coast, for
             the past three years were worth it.
